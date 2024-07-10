@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root{
+    --color-primary: #E9ECF8;
+    --color-secondary: #0A3871;
+    --color-third: #D8DFE8;
+    --color-back-title: #343A40;
+    --color-back-paragraph: #495057;
+
+    --font-paragraph: "Inter", sans-serif;
+
+    --font-size-subparagraph: 1.75rem;
+    --font-size-paragraph: 1.5rem;
+    --font-size-miniparagraph: 1.25rem;
+
+    --border-radius-general: 18px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-primary);
+    font-family: var(--font-paragraph);
+    box-sizing: border-box;
+    min-height: 100vh;
+}
+
+.header{
+    padding: 2% 0% 0% 2%;
+}
+
+.encryptor{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    padding: 32px;;
+}
+
+.encryptor__input{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0 40px 0;
+}
+
+.encryptor__input__text{
+    width: 100%;
+    height: 100%;
+    font-size: var(--font-size-subparagraph);
+    color: var(--color-secondary);
+    border: none;
+    background-color: var(--color-primary);
+    outline: none;
+    resize: none;
+}
+
+.encryptor__input__text::placeholder{
+    color: var(--color-secondary);
+}
+
+.encryptor__input__action{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    
+}
+
+#encryptor__input__action__validation{
+    display: none;
+    font-size: var(--font-size-paragraph);
+}
+
+.encryptor__input__action__link{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.encryptor__input__action__link__button__encrypt{
+    width: 50%;
+    text-align: center;
+    padding: 22px 0;
+    background-color: var(--color-secondary);
+    color: var(--color-third);
+    border: 2px solid var(--color-third);
+    border-radius: var(--border-radius-general);
+    text-decoration: none;
+    font-size: var(--font-size-paragraph);
+    cursor: pointer;
+}
+
+.encryptor__input__action__link__button__decrypt{
+    width: 50%;
+    text-align: center;
+    padding: 22px 0;
+    background-color: var(--color-third);
+    color: var(--color-secondary);
+    border: 2px solid var(--color-secondary);
+    border-radius: var(--border-radius-general);
+    text-decoration: none;
+    font-size: var(--font-size-paragraph);
+    cursor: pointer;
+}
+
+.encryptor__back{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: white;
+    border-radius: 32px;
+    box-shadow: 0 0 18px rgba(0, 0, 0, 0.1);
+    padding: 40px 0 40px 0;
+}
+
+.encryptor__back__standby{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+    width: 400px;
+    height: 100%;
+}
+
+.encryptor__back__standby__image{
+    display: hidden;
+}
+
+.encryptor__back__standby__title{
+    font-size: var(--font-size-subparagraph);
+    font-weight: bold;
+    text-align: center;
+    color: var(--color-back-title);
+}
+
+.encryptor__back__standby__paragraph{
+    font-size: var(--font-size-miniparagraph);
+    text-align: center;
+    color: var(--color-back-paragraph);
+}
+
+.encryptor__back__result{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    height: 100%;
+}
+
+.encryptor__back__result__text{
+    width: 80%;
+    height: 80%;
+    padding-top: 10%;
+    font-size: var(--font-size-paragraph);
+    color: var(--color-back-paragraph);
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+.encryptor__back__result__copy{
+    width: 90%;
+    text-align: center;
+    padding: 22px 0;
+    background-color: transparent;
+    color: var(--color-secondary);
+    border: 2px solid var(--color-secondary);
+    border-radius: var(--border-radius-general);
+    text-decoration: none;
+    font-size: var(--font-size-paragraph);
+    cursor: pointer;
+}
+
+footer{
+    text-align: center;
+    background-color: var(--color-secondary);
+    color: var(--color-third);
+    font-size: 16px;
+    padding: 10px;
+}
+
+@media (max-width: 768px){    
+    .encryptor{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .encryptor__input{
+        width: 100%;
+        height: 520px;
+    }
+
+    .encryptor__input__action{
+        width: 100%;
+    }
+
+    .encryptor__back{
+        width: 100%;
+    }
+
+    .encryptor__back__standby{
+        width: 90%;
+    }
+
+    .encryptor__back__standby__image{
+        display:none;
+    }
+
+    .encryptor__back__result{
+        width: 100%;
+    }
+}
+
+@media (max-width: 390px){
+    .encryptor__input{
+        height: 500px;
+    }
+
+    .encryptor__input__action__link{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .encryptor__input__action__link__button__encrypt{
+        width: 100%;
+    }
+
+    .encryptor__input__action__link__button__decrypt{
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="header">
+        <img src="images/logo.png" alt="Logo alura">
+    </header>
+    <main class="encryptor">
+        <section class="encryptor__input">
+            <textarea id="encryptor__input__text" class="encryptor__input__text" placeholder="Ingrese el texto aquí" type="text" autofocus></textarea>
+            <div class="encryptor__input__action">
+                <p id="encryptor__input__action__validation">Solo letras minúsculas y sin acentos.</p> 
+                <div class="encryptor__input__action__link">
+                    <a class="encryptor__input__action__link__button__encrypt" onclick="encrypt(event, true)">Cifrar</a>
+                    <a class="encryptor__input__action__link__button__decrypt" onclick="encrypt(event, false)">Descifrar</a>
+                </div>
+            </div>            
+        </section>
+        <section class="encryptor__back">
+            <div id="encryptor__back__standby" class="encryptor__back__standby">
+                <img class="encryptor__back__standby__image" src="images/muneco.png" alt="Un muñeco con una lupa">
+                <p class="encryptor__back__standby__title" >Ningún mensaje fue encontrado</p>
+                <p class="encryptor__back__standby__paragraph" >Ingresa el texto que desees encriptar o desencriptar</p>
+            </div>
+            <div id="encryptor__back__result" class="encryptor__back__result">
+                <textarea id="encryptor__back__result__text" class="encryptor__back__result__text" cols="30" rows="10" readonly></textarea>
+                <a id="encryptor__back__result__copy" class="encryptor__back__result__copy" onclick="copy()">Copiar</a>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        Creado por GaroDev
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
