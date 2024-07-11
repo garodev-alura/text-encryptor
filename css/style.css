@@ -112,7 +112,8 @@ body{
 .encryptor__back{
     display: flex;
     flex-direction: column;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
     background-color: white;
     border-radius: 32px;
     box-shadow: 0 0 18px rgba(0, 0, 0, 0.1);
@@ -122,8 +123,8 @@ body{
 #encryptor__back__standby{
     display: flex;
     flex-direction: column;
-    gap: 16px;
     justify-content: center;
+    gap: 16px;
     width: 400px;
     height: 100%;
 }
