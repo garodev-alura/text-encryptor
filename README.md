@@ -13,7 +13,10 @@ Proyecto para encriptar y desencriptar texto. Diviertete mandando mensajes espec
 
   ### Diseño responsivo
   Diseño responsivo compatible con dispositivos móviles para acceder desde cualquier lugar.
-  ![image](https://github.com/garodev-alura/text-encryptor/assets/173487385/3eeea1cd-8c7e-4691-a33a-89a9bd950675)
+  ![image](https://github.com/garodev-alura/text-encryptor/assets/173487385/9823cd92-5289-4495-9c62-f9ce697f8cf2)
+  ![image](https://github.com/garodev-alura/text-encryptor/assets/173487385/fb627c6f-ccef-4c24-bd40-e34fc7796e0a)
+
+
 
   ### Entrada de texto para tus mensaje
   Entrada de texto para encriptar y desencriptar mensajes.
