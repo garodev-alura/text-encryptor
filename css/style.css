@@ -46,10 +46,11 @@ body{
     width: 60%;
     display: flex;
     flex-direction: column;
+    gap: 20px;
     padding: 40px 0 40px 0;
 }
 
-.encryptor__input__text{
+#encryptor__input__text{
     width: 100%;
     height: 100%;
     font-size: var(--font-size-subparagraph);
@@ -60,7 +61,7 @@ body{
     resize: none;
 }
 
-.encryptor__input__text::placeholder{
+#encryptor__input__text::placeholder{
     color: var(--color-secondary);
 }
 
@@ -118,7 +119,7 @@ body{
     padding: 40px 0 40px 0;
 }
 
-.encryptor__back__standby{
+#encryptor__back__standby{
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -144,7 +145,7 @@ body{
     color: var(--color-back-paragraph);
 }
 
-.encryptor__back__result{
+#encryptor__back__result{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -153,7 +154,7 @@ body{
     height: 100%;
 }
 
-.encryptor__back__result__text{
+#encryptor__back__result__text{
     width: 80%;
     height: 80%;
     padding-top: 10%;
@@ -164,7 +165,7 @@ body{
     resize: none;
 }
 
-.encryptor__back__result__copy{
+#encryptor__back__result__copy{
     width: 90%;
     text-align: center;
     padding: 22px 0;
@@ -195,7 +196,7 @@ footer{
 
     .encryptor__input{
         width: 100%;
-        height: 520px;
+        height: 60vh;
     }
 
     .encryptor__input__action{
@@ -204,9 +205,10 @@ footer{
 
     .encryptor__back{
         width: 100%;
+        height: 40vh;
     }
 
-    .encryptor__back__standby{
+    #encryptor__back__standby{
         width: 90%;
     }
 
@@ -214,14 +216,14 @@ footer{
         display:none;
     }
 
-    .encryptor__back__result{
+    #encryptor__back__result{
         width: 100%;
     }
 }
 
 @media (max-width: 390px){
     .encryptor__input{
-        height: 500px;
+        height: 60vh;
     }
 
     .encryptor__input__action__link{
@@ -236,6 +238,10 @@ footer{
 
     .encryptor__input__action__link__button__decrypt{
         width: 100%;
+    }
+
+    .encryptor__back{
+        height: 40vh;
     }
 
 }

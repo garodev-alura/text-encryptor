@@ -12,7 +12,7 @@
     </header>
     <main class="encryptor">
         <section class="encryptor__input">
-            <textarea id="encryptor__input__text" class="encryptor__input__text" placeholder="Ingrese el texto aquí" type="text" autofocus></textarea>
+            <textarea id="encryptor__input__text" placeholder="Ingrese el texto aquí" type="text" autofocus></textarea>
             <div class="encryptor__input__action">
                 <p id="encryptor__input__action__validation">Solo letras minúsculas y sin acentos.</p> 
                 <div class="encryptor__input__action__link">
@@ -22,14 +22,14 @@
             </div>            
         </section>
         <section class="encryptor__back">
-            <div id="encryptor__back__standby" class="encryptor__back__standby">
+            <div id="encryptor__back__standby">
                 <img class="encryptor__back__standby__image" src="images/muneco.png" alt="Un muñeco con una lupa">
                 <p class="encryptor__back__standby__title" >Ningún mensaje fue encontrado</p>
                 <p class="encryptor__back__standby__paragraph" >Ingresa el texto que desees encriptar o desencriptar</p>
             </div>
-            <div id="encryptor__back__result" class="encryptor__back__result">
-                <textarea id="encryptor__back__result__text" class="encryptor__back__result__text" cols="30" rows="10" readonly></textarea>
-                <a id="encryptor__back__result__copy" class="encryptor__back__result__copy" onclick="copy()">Copiar</a>
+            <div id="encryptor__back__result">
+                <textarea id="encryptor__back__result__text" readonly></textarea>
+                <a id="encryptor__back__result__copy" onclick="copy()">Copiar</a>
             </div>
         </section>
     </main>
